@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Make the body take up the entire window */
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Desktop container */
+  #desktop {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   
+  }
+  
+  /* The screen area (takes up the remaining space) */
+  #screen {
+    flex: 1;  /* This makes the screen area take up the remaining space */
+    background-color: darkslategrey;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Taskbar fixed at the bottom */
+  #taskbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Buttons in the taskbar */
+  #taskbar button {
+    background-color: #444;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+/* Icon styling */
+.icon {
+    width: 80px;
+    height: 80px;
+    background-color: #0078d4;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+
+  .icon span {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  /* Start Menu styling */
+#startMenu {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Hidden by default */
+    z-index: 1000;
+  }
+  
+  #startMenu ul {
+    list-style: none;
+    padding: 10px;
+  }
+  
+  #startMenu li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #startMenu li:hover {
+    background-color: #444;
+  }
