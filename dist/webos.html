@@ -19,7 +19,7 @@
   --tb-h: 52px;
   --ease: cubic-bezier(.2, .8, .2, 1);
 }
-[data-theme="dark"] {
+:root, [data-theme="dark"] {
   --bg: #0f172a;
   --surface: #1e1f26;
   --surface-2: #26272f;
@@ -40,7 +40,7 @@
   --ok: #22c55e;
   color-scheme: dark;
 }
-[data-theme="light"] {
+:root[data-theme="light"], [data-theme="light"] {
   --bg: #e2e8f0;
   --surface: #ffffff;
   --surface-2: #f4f5f8;
